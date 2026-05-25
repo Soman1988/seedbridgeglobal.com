@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seed Bridge Global Traders Ltd — Premium Export Website</title>
+  <meta name="description" content="Premium export website for Seed Bridge Global Traders Ltd, focused on hyacinth beans and international buyer inquiries." />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.75rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f5f0;
+      --color-surface: #fcfbf8;
+      --color-surface-2: #f1ede4;
+      --color-surface-offset: #ebe5da;
+      --color-border: #d6cfbf;
+      --color-divider: #ddd6c8;
+      --color-text: #272218;
+      --color-text-muted: #6d675c;
+      --color-text-faint: #9c9588;
+      --color-text-inverse: #fbfaf6;
+      --color-primary: #0b6b64;
+      --color-primary-hover: #084d48;
+      --color-primary-highlight: #d6ebe6;
+      --color-gold: #b98c2b;
+      --shadow-sm: 0 1px 2px rgba(39,34,24,.06);
+      --shadow-md: 0 10px 30px rgba(39,34,24,.09);
+      --shadow-lg: 0 24px 60px rgba(39,34,24,.14);
+      --radius-sm: .5rem; --radius-md: .9rem; --radius-lg: 1.25rem; --radius-xl: 1.75rem; --radius-full: 999px;
+      --font-body: 'Satoshi', 'Inter', sans-serif;
+      --font-display: 'Zodiak', Georgia, serif;
+      --content: 1180px;
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #151411;
+      --color-surface: #1b1915;
+      --color-surface-2: #231f19;
+      --color-surface-offset: #2a251e;
+      --color-border: #3a342c;
+      --color-divider: #302b24;
+      --color-text: #ddd8cf;
+      --color-text-muted: #aaa294;
+      --color-text-faint: #756d60;
+      --color-text-inverse: #151411;
+      --color-primary: #68b5ae;
+      --color-primary-hover: #8fd0c9;
+      --color-primary-highlight: #233532;
+      --color-gold: #ddb86b;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.25);
+      --shadow-md: 0 10px 30px rgba(0,0,0,.3);
+      --shadow-lg: 0 24px 60px rgba(0,0,0,.4);
+    }
+    *,*::before,*::after{box-sizing:border-box} html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased} body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:var(--color-bg);color:var(--color-text)}
+    img,svg{display:block;max-width:100%} a{text-decoration:none;color:inherit} button,input,textarea{font:inherit}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .skip-link{position:absolute;left:-999px}.skip-link:focus{left:1rem;top:1rem;background:var(--color-primary);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-sm);z-index:99}
+    .site-header{position:sticky;top:0;z-index:30;background:color-mix(in srgb, var(--color-bg) 82%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-divider)}
+    .header-wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}.brand{display:flex;align-items:center;gap:.85rem;font-weight:700}.brand-mark{width:2.9rem;height:2.9rem;padding:.45rem;border-radius:var(--radius-md);background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));border:1px solid var(--color-border);color:var(--color-primary)}
+    .brand-copy small{display:block;color:var(--color-text-muted);font-size:var(--text-xs);font-weight:500;letter-spacing:.08em;text-transform:uppercase}.brand-copy span{display:block;font-size:var(--text-sm)}
+    .nav{display:flex;align-items:center;gap:var(--space-4)} .nav-links{display:flex;gap:var(--space-4);color:var(--color-text-muted);font-size:var(--text-sm)} .nav-links a:hover{color:var(--color-primary)}
+    .theme-toggle,.menu-toggle{display:grid;place-items:center;width:2.75rem;height:2.75rem;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-surface);color:var(--color-text);cursor:pointer;transition:all var(--transition)} .menu-toggle{display:none}
+    .hero{padding:clamp(4rem,8vw,7rem) 0 var(--space-12);position:relative;overflow:hidden}.hero::before{content:"";position:absolute;inset:auto -10% 10% auto;width:34rem;height:34rem;border-radius:50%;background:radial-gradient(circle,var(--color-primary-highlight),transparent 62%);opacity:.9;pointer-events:none}
+    .hero-grid,.premium-band,.products,.trust,.quote-grid,.contact-grid{display:grid;gap:var(--space-4)} .hero-grid{grid-template-columns:1.15fr .85fr;align-items:end}.premium-band,.products,.trust{grid-template-columns:1fr 1fr}.quote-grid,.contact-grid{grid-template-columns:.95fr 1.05fr}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .8rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1,h2,h3{font-family:var(--font-display);line-height:1.08;margin:0} h1{font-size:var(--text-2xl);max-width:11ch;margin-top:var(--space-4)}
+    .lead,.section-head p,.card p,.list li,.timeline li,.contact-card p{color:var(--color-text-muted)} .lead{max-width:62ch;margin:var(--space-5) 0 0}
+    .hero-actions,.cta-actions,.tag-row{display:flex;flex-wrap:wrap;gap:var(--space-3)} .hero-actions,.tag-row{margin-top:var(--space-5)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.9rem 1.2rem;border-radius:var(--radius-full);border:1px solid transparent;font-size:var(--text-sm);font-weight:700;transition:all var(--transition);box-shadow:var(--shadow-sm)} .btn:hover,.theme-toggle:hover,.menu-toggle:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)} .btn-secondary{background:var(--color-surface);border-color:var(--color-border)}
+    .hero-card,.card,.premium-panel,.contact-card{background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-6);box-shadow:var(--shadow-md)}
+    .hero-stat,.mini-stats,.grid-3,.markets{display:grid;gap:var(--space-3)} .hero-stat{grid-template-columns:repeat(2,1fr);margin-top:var(--space-5)} .grid-3{grid-template-columns:repeat(3,1fr)} .mini-stats{grid-template-columns:repeat(3,1fr)} .markets{grid-template-columns:repeat(5,1fr)}
+    .metric,.mini-stat,.market{padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-bg);border:1px solid var(--color-divider)} .metric strong,.mini-stat strong{display:block;font-size:var(--text-lg);font-family:var(--font-display)} .metric span,.mini-stat span{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)} .market{text-align:center;font-weight:700}
+    section{padding:clamp(3.5rem,6vw,5.5rem) 0}.section-head{display:flex;justify-content:space-between;gap:var(--space-4);align-items:end;margin-bottom:var(--space-8)}
+    .icon-chip{width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:var(--radius-md);background:var(--color-primary-highlight);color:var(--color-primary);margin-bottom:var(--space-4)}
+    .list,.timeline{list-style:none;padding:0;margin:var(--space-5) 0 0;display:grid;gap:var(--space-3)} .list li{display:flex;gap:.75rem;align-items:flex-start} .timeline li{padding-left:1rem;border-left:2px solid var(--color-primary-highlight)}
+    .dot{width:.6rem;height:.6rem;border-radius:var(--radius-full);background:var(--color-gold);margin-top:.45rem;flex:none}
+    .tag{padding:.5rem .8rem;border-radius:var(--radius-full);border:1px solid var(--color-border);background:color-mix(in srgb,var(--color-surface-2) 88%, transparent);font-size:var(--text-xs);font-weight:700;color:var(--color-text-muted)}
+    .cta-box{background:linear-gradient(135deg,var(--color-primary),#13817a);color:var(--color-text-inverse);padding:clamp(2rem,4vw,3rem);border-radius:calc(var(--radius-xl) + .4rem);box-shadow:var(--shadow-lg)} .cta-box p{color:color-mix(in srgb, white 82%, transparent)} .cta-box .btn-primary{background:var(--color-text-inverse);color:var(--color-primary)} .cta-box .btn-secondary{background:transparent;color:var(--color-text-inverse);border-color:rgba(255,255,255,.28)}
+    form{display:grid;gap:var(--space-4)} label{display:grid;gap:.45rem;font-size:var(--text-sm);font-weight:700} input,textarea{width:100%;padding:.95rem 1rem;border-radius:var(--radius-md);border:1px solid var(--color-border);background:var(--color-bg);color:var(--color-text)} input:focus,textarea:focus{outline:2px solid var(--color-primary);outline-offset:2px} textarea{min-height:150px;resize:vertical}
+    .site-footer{padding:var(--space-8) 0 calc(var(--space-8) + 4rem);border-top:1px solid var(--color-divider);color:var(--color-text-muted)} .footer-wrap{display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap}
+    .whatsapp-float{position:fixed;right:1rem;bottom:1rem;z-index:50;display:inline-flex;align-items:center;gap:.7rem;padding:.9rem 1rem;border-radius:var(--radius-full);background:#25D366;color:#fff;box-shadow:var(--shadow-lg);font-weight:700;min-height:52px} .whatsapp-float small{display:block;font-size:11px;line-height:1.1;color:rgba(255,255,255,.82)}
+    @media (max-width:960px){.hero-grid,.premium-band,.products,.trust,.quote-grid,.contact-grid{grid-template-columns:1fr}.grid-3,.markets,.mini-stats{grid-template-columns:repeat(2,1fr)}.nav-links{display:none;position:absolute;top:100%;right:1rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow-md);flex-direction:column;min-width:220px}.nav-links.open{display:flex}.menu-toggle{display:grid}}
+    @media (max-width:640px){.container{width:min(calc(100% - 1.25rem),var(--content))}.hero-stat,.grid-3,.markets,.mini-stats{grid-template-columns:1fr}.section-head,.footer-wrap{flex-direction:column;align-items:flex-start}.whatsapp-float span:last-child{display:none}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#top" aria-label="Seed Bridge Global Traders Ltd home">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 40c9-2 16-10 19-23 8 8 13 18 11 28-2 9-9 15-19 15-7 0-12-2-16-6 7-2 13-7 18-15-6 4-11 6-13 6z"/>
+            <path d="M20 48c6 0 11-2 16-7"/>
+          </svg>
+        </div>
+        <div class="brand-copy">
+          <small>seedbridgeglobal.com</small>
+          <span>Seed Bridge Global Traders Ltd</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>☰</button>
+        <div class="nav-links" data-nav>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#markets">Markets</a>
+          <a href="#quote">Quote</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Bellary • India • Wholesale export</span>
+          <h1>Premium buyer-facing website for hyacinth beans export.</h1>
+          <p class="lead">Seed Bridge Global Traders Ltd now has a more premium web presentation with a stronger quote path, direct WhatsApp access, and a cleaner export-business structure for international buyers.</p>
+          <div class="tag-row" aria-label="Business tags">
+            <span class="tag">Hyacinth beans</span>
+            <span class="tag">Bulk export</span>
+            <span class="tag">Global buyers</span>
+            <span class="tag">Bellary origin</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quote">Request a quote</a>
+            <a class="btn btn-secondary" href="mailto:Somangowda1988@aol.com" target="_blank" rel="noopener noreferrer">Email now</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Company highlights">
+          <span class="eyebrow">Business snapshot</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Designed to look more established from the first visit.</h2>
+          <div class="hero-stat">
+            <div class="metric"><strong>Hyacinth beans</strong><span>core product</span></div>
+            <div class="metric"><strong>All countries</strong><span>target markets</span></div>
+            <div class="metric"><strong>WhatsApp ready</strong><span>fast buyer chat</span></div>
+            <div class="metric"><strong>Quote section</strong><span>lead capture focus</span></div>
+          </div>
+        </aside>
+      </div>
+      <div class="container premium-band" style="margin-top:var(--space-8)">
+        <div class="premium-panel">
+          <span class="eyebrow">Premium look</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Cleaner visual storytelling for agriculture and export buyers.</h2>
+          <p class="lead" style="margin-top:var(--space-4)">Agriculture website inspiration sources emphasize polished layouts, clearer product storytelling, and stronger visual framing to create a more professional brand impression [web:149][web:140][web:143].</p>
+        </div>
+        <div class="premium-panel">
+          <span class="eyebrow">Instant communication</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">WhatsApp access added for faster international inquiries.</h2>
+          <p class="lead" style="margin-top:var(--space-4)">A direct WhatsApp button is commonly used to help visitors start business conversations quickly, especially on mobile and lead-generation websites [web:166][web:168][web:174].</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">About the company</span>
+            <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">A practical export profile with stronger trust signals.</h2>
+          </div>
+          <p>Contact-led company pages work well when they clearly explain who the business is, what it sells, and how buyers should inquire, because that reduces friction for first-time visitors [web:123][web:152][web:160].</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon-chip">01</div><h3>Company identity</h3><p>Seed Bridge Global Traders Ltd is now presented with stronger branding and cleaner structure.</p></article>
+          <article class="card"><div class="icon-chip">02</div><h3>Focused product story</h3><p>The site keeps hyacinth beans as the clear export focus so buyers do not need to guess your specialization.</p></article>
+          <article class="card"><div class="icon-chip">03</div><h3>Higher conversion path</h3><p>The quote request section and direct contact options make it easier for serious buyers to move to inquiry [web:169][web:172].</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container products">
+        <div class="premium-panel">
+          <span class="eyebrow">Core product</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Hyacinth beans for international sourcing</h2>
+          <ul class="list" role="list">
+            <li><span class="dot"></span><span>Product focus kept specific for better buyer clarity.</span></li>
+            <li><span class="dot"></span><span>Designed for wholesale inquiry and export presentation.</span></li>
+            <li><span class="dot"></span><span>Can be expanded later with grades, moisture, packaging, and shipment details.</span></li>
+            <li><span class="dot"></span><span>Suitable as a current-stage export identity while compliance details are added later.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Recommended next additions</h3>
+          <ul class="list" role="list">
+            <li><span class="dot"></span><span>Real product gallery and packing photos.</span></li>
+            <li><span class="dot"></span><span>MOQ, bag sizes, and loading capacity.</span></li>
+            <li><span class="dot"></span><span>Certificate section once GST, IEC, APEDA, or other registrations are ready.</span></li>
+            <li><span class="dot"></span><span>Buyer documents and sample request workflow.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="markets">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Target markets</span>
+            <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Open to buyers across regions</h2>
+          </div>
+          <p>Business websites for export often highlight regions served or target countries so buyers can quickly identify relevance [web:123].</p>
+        </div>
+        <div class="markets" aria-label="Target countries">
+          <div class="market">UAE</div>
+          <div class="market">Saudi Arabia</div>
+          <div class="market">Singapore</div>
+          <div class="market">Malaysia</div>
+          <div class="market">United Kingdom</div>
+          <div class="market">Italy</div>
+          <div class="market">Canada</div>
+          <div class="market">Australia</div>
+          <div class="market">Netherlands</div>
+          <div class="market">All countries</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <div class="container quote-grid">
+        <article class="contact-card">
+          <span class="eyebrow">Request quote</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Send a buyer quote request for hyacinth beans</h2>
+          <p>Quote request forms generally perform better when they stay concise, use clear labels, and ask only for information needed for pricing or follow-up [web:169][web:172][web:167].</p>
+          <div class="mini-stats">
+            <div class="mini-stat"><strong>1</strong><span>Core product</span></div>
+            <div class="mini-stat"><strong>All</strong><span>Markets</span></div>
+            <div class="mini-stat"><strong>Fast</strong><span>Direct response</span></div>
+          </div>
+        </article>
+        <article class="contact-card">
+          <form>
+            <label>Buyer name<input type="text" placeholder="Company or buyer name" /></label>
+            <label>Email<input type="email" placeholder="buyer@example.com" /></label>
+            <label>Country<input type="text" placeholder="Destination country" /></label>
+            <label>Quantity required<input type="text" placeholder="Example: 5 MT / 20 MT" /></label>
+            <label>Quote details<textarea placeholder="Mention hyacinth beans grade, packaging, destination port, and timeline"></textarea></label>
+            <button class="btn btn-primary" type="button">Submit quote request</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container trust">
+        <article class="card">
+          <span class="eyebrow">Inquiry flow</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Simple route from inquiry to trade discussion</h2>
+          <ol class="timeline">
+            <li><strong>Step 1.</strong> Buyer reaches out through quote form, phone, email, or WhatsApp.</li>
+            <li><strong>Step 2.</strong> Quantity, destination, and packaging requirements are discussed.</li>
+            <li><strong>Step 3.</strong> Specification and commercial terms can be shared directly.</li>
+            <li><strong>Step 4.</strong> Trade documents and shipment details can be added as the business setup expands.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Why this upgrade</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">More premium and more conversion-oriented</h2>
+          <p>This version places greater emphasis on fast contact, clearer product positioning, and a visible quote action, which is better aligned with lead-generation best practices than a plain brochure layout [web:166][web:169][web:160].</p>
+          <ul class="list" role="list">
+            <li><span class="dot"></span><span>Premium visual layout and stronger hero presentation.</span></li>
+            <li><span class="dot"></span><span>Dedicated quote request section.</span></li>
+            <li><span class="dot"></span><span>Floating WhatsApp button for direct chat.</span></li>
+            <li><span class="dot"></span><span>Real company details preserved from your earlier version.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <span class="eyebrow" style="background:rgba(255,255,255,.14);color:white">SeedBridgeGlobal.com</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">A buyer can now discover the company, review the product focus, request a quote, and start a WhatsApp conversation from one page.</h2>
+          <p>That kind of direct path is useful because modern contact pages and lead forms work best when they reduce steps between interest and action [web:152][web:160][web:169].</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:Somangowda1988@aol.com" target="_blank" rel="noopener noreferrer">Email the company</a>
+            <a class="btn btn-secondary" href="tel:+919860698853">Call now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <article class="contact-card">
+          <span class="eyebrow">Contact details</span>
+          <h2 style="font-size:var(--text-xl);margin-top:var(--space-4)">Seed Bridge Global Traders Ltd</h2>
+          <p>Business details are included exactly from your provided information so the site stays accurate and practical for immediate use.</p>
+          <ul class="list" role="list">
+            <li><span class="dot"></span><span>Domain: seedbridgeglobal.com</span></li>
+            <li><span class="dot"></span><span>Phone: <a href="tel:+919860698853">9860698853</a></span></li>
+            <li><span class="dot"></span><span>WhatsApp: <a href="https://wa.me/919860698853" target="_blank" rel="noopener noreferrer">9860698853</a></span></li>
+            <li><span class="dot"></span><span>Email: <a href="mailto:Somangowda1988@aol.com" target="_blank" rel="noopener noreferrer">Somangowda1988@aol.com</a></span></li>
+            <li><span class="dot"></span><span>Address: Bellary</span></li>
+            <li><span class="dot"></span><span>Target countries: All</span></li>
+          </ul>
+        </article>
+        <article class="contact-card">
+          <h3>Buyer inquiry</h3>
+          <form>
+            <label>Buyer name<input type="text" placeholder="Enter buyer or company name" /></label>
+            <label>Email<input type="email" placeholder="buyer@example.com" /></label>
+            <label>Requirement<textarea placeholder="Mention hyacinth beans quantity, destination country, and packaging requirement"></textarea></label>
+            <button class="btn btn-primary" type="button">Send inquiry request</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>Seed Bridge Global Traders Ltd • Bellary • Hyacinth beans export profile.</div>
+      <div>Domain: seedbridgeglobal.com</div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919860698853" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.24c-.29-.14-1.72-.85-1.98-.95-.27-.1-.46-.14-.66.15-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.08-.29-.14-1.22-.45-2.33-1.45-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.44.12-.58.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.91-2.18-.24-.58-.49-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-.99 2.44.02 1.44 1.04 2.83 1.19 3.03.14.19 2.04 3.11 5.03 4.24.71.31 1.27.49 1.71.62.72.23 1.37.2 1.89.12.58-.09 1.72-.7 1.96-1.38.24-.68.24-1.27.17-1.38-.07-.12-.26-.19-.56-.34Z"/><path d="M27.01 4.97A15.86 15.86 0 0 0 16.05.5C7.48.5.5 7.47.5 16.05c0 2.73.71 5.39 2.05 7.73L.38 31.62l8.05-2.11a15.47 15.47 0 0 0 7.62 1.94h.01c8.57 0 15.55-6.98 15.55-15.55 0-4.15-1.61-8.05-4.6-10.93ZM16.06 28.8h-.01a12.8 12.8 0 0 1-6.52-1.78l-.47-.28-4.78 1.25 1.28-4.66-.31-.48a12.74 12.74 0 0 1-1.97-6.8c0-7.05 5.74-12.78 12.8-12.78 3.42 0 6.64 1.33 9.06 3.75a12.72 12.72 0 0 1 3.73 9.05c0 7.05-5.74 12.78-12.8 12.78Z"/></svg>
+    <span><small>WhatsApp</small>Chat now</span>
+  </a>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const themeBtn = document.querySelector('[data-theme-toggle]');
+      const menuBtn = document.querySelector('[data-menu-toggle]');
+      const nav = document.querySelector('[data-nav]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const updateThemeIcon = () => {
+        themeBtn.innerHTML = theme === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        themeBtn.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+      };
+      updateThemeIcon();
+      themeBtn.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateThemeIcon();
+      });
+      if(menuBtn){
+        menuBtn.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', String(open));
+        });
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+          if (nav.classList.contains('open')) {
+            nav.classList.remove('open');
+            menuBtn?.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
